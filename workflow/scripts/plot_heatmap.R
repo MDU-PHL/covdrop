@@ -49,7 +49,7 @@ rownames(mat) <- mat[,1]
 mat <- t(as.matrix(mat[,-1])) #mat <- t(as.matrix(log10(mat[,-1] + 1)))
 heatmap <-  Heatmap(mat,
                     column_title         = "Percentage of Ns per amplicon",
-                    name                 = "Percent Missing",
+                    name                 = "Percent Ns",
                     cluster_rows         = TRUE,
                     cluster_columns      = FALSE,
                     show_row_names       = TRUE,
