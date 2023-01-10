@@ -1,0 +1,13 @@
+# configuration of display in snakemake workflow catalog: https://snakemake.github.io/snakemake-workflow-catalog
+
+snk: 
+  annotations: # snk will use these annotations to impove the cli
+    fasta:
+      type: Path
+      help: "Path to the fasta file."
+    bed:
+      type: Path
+      help: "Path to the bed file containing primer pairs"
+    out:
+      type: Path
+      help: "Path to save the heatmap"
