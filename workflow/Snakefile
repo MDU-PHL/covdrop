@@ -16,7 +16,7 @@ with open(config['fasta']) as f:
 
 rule all:
     input:
-        'heatmap.pdf',
+        config['out'],
 
 include: "rules/align.smk"
 include: "rules/bed.smk"
