@@ -17,7 +17,7 @@ snakemake --use-conda -j -C fasta=samples.fa bed=artic_v4.1.bed
 ### [SNK](https://github.com/Wytamma/snk)
 
 ```
-snk install https://github.com/MDU-PHL/covdrop.git
+snk install MDU-PHL/covdrop
 ```
 
 ```
