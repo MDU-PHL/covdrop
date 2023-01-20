@@ -1,0 +1,12 @@
+annotations: # snk will use these annotations to impove the cli
+  fasta:
+    type: Path
+    help: "Path to the fasta file."
+    required: True
+  bed:
+    type: Path
+    help: "Path to the bed file containing primer pairs"
+    required: True
+  out:
+    type: Path
+    help: "Path to save the heatmap"

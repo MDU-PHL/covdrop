@@ -1,13 +1,7 @@
 # configuration of display in snakemake workflow catalog: https://snakemake.github.io/snakemake-workflow-catalog
-
-snk: 
-  annotations: # snk will use these annotations to impove the cli
-    fasta:
-      type: path
-      help: "Path to the fasta file."
-    bed:
-      type: path
-      help: "Path to the bed file containing primer pairs"
-    out:
-      type: path
-      help: "Path to save the heatmap"
+usage:
+  software-stack-deployment: # definition of software deployment method (at least one of conda, singularity, or singularity+conda)
+    conda: true # whether pipeline works with --use-conda
+    singularity: false # whether pipeline works with --use-singularity
+    singularity+conda: false # whether pipeline works with --use-singularity --use-conda
+  report: false 
