@@ -48,7 +48,7 @@ def count_Ns_in_region(input, output, regions):
         for fasta in FASTAs:
             for region in regions:
                 amplicon = FASTAs[fasta][region['start']: region['stop']]
-                percent_Ns = (amplicon.lower().count('n')/len(amplicon))*100
+                percent_Ns = ((amplicon.lower().count('n') + amplicon.lower().count('-'))/len(amplicon))*100
                 f.write(f"\t{region['start']}\t{region['stop']}\t{region['name']}\t{percent_Ns}\t{fasta}\n")
 
 def main(args=None):
