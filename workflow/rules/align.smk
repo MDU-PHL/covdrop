@@ -12,7 +12,7 @@ rule download_covid_reference:
 
 rule align:
     input:
-        reference = rules.download_covid_reference.output.reference,
+        reference = config['reference']
         sequences = config['fasta']
     output:
         alignment = temp("sequences.alignment")

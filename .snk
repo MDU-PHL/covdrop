@@ -7,6 +7,11 @@ annotations: # snk will use these annotations to impove the cli
     type: Path
     help: "Path to the bed file containing primer pairs"
     required: True
+  reference:
+    type: Path
+    default: "wuhCor1.fa"
+    help: "Path to the reference genome (default: wuhCor1.fa will be downloaded if not present)"
+    required: True
   out:
     type: Path
     help: "Path to save the heatmap"
