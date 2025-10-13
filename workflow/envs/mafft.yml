@@ -1,5 +1,10 @@
 channels:
-  - bioconda
   - conda-forge
+  - bioconda
+  - defaults
 dependencies:
-  - mafft==7.471
+  - _libgcc_mutex=0.1
+  - _openmp_mutex=4.5
+  - libgcc-ng=12.2.0
+  - libgomp=12.2.0
+  - mafft=7.471
