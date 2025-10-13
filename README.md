@@ -17,11 +17,11 @@ snakemake --use-conda -j -C fasta=samples.fa bed=artic_v4.1.bed
 ### [SNK](https://github.com/Wytamma/snk)
 
 ```
-snk install MDU-PHL/covdrop
+snk install MDU-PHL/covdrop -s 7.32.4
 ```
 
 ```
-covdrop --fasta samples.fa --bed artic_v4.1.bed
+covdrop run --fasta samples.fa --bed artic_v4.1.bed
 ```
 
 ## Heatmap 
