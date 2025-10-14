@@ -11,7 +11,7 @@ git clone https://github.com/MDU-PHL/covdrop.git && cd covdrop
 ```
 
 ```
-snakemake --use-conda -j -C fasta=samples.fa bed=artic_v4.1.bed
+snakemake --use-conda -j -C fasta=samples.fa bed=artic_v4.1.bed reference=wuhCor1.fa
 ```
 
 ### [SNK](https://github.com/Wytamma/snk)
